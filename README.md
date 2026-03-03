@@ -62,5 +62,5 @@ cd manuscripts # moves into Manuscripts directory
 
 Reboot later.
 
-## Step 5: Write
+## Step 4: Write
 Assuming you have correctly done the above, when your writerdeck reboots, it should boot into Manuscripts and you're ready to start composing.
