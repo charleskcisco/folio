@@ -46,7 +46,7 @@ sudo apt install git # allows the cloning of github repositories onto your devic
 git clone https://github.com/charleskcisco/manuscripts.git
 cd manuscripts # moves into Manuscripts directory
 ./device-setup.sh # moves foot.ini into place, sets up .bashrc and boot script
-./app-setup # installs dependencies, sets up venv, reboots (so make sure to do this one last)
+./app-setup.sh # installs dependencies, sets up venv, reboots (so make sure to do this one last)
 ```
 
 ### Excursus: In Raspi-Config
