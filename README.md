@@ -1,7 +1,7 @@
 # Setup instructions
 
 ## Step 0: Ensure that your keyboard has the proper layout before enclosing it in your shell
-Keyboard layout .json files may be found on the [Folio Github Repository](https://github.com/charleskcisco/folio).
+Keyboard layout .json files may be found on the [Folio Github repository](https://github.com/charleskcisco/folio).
 
 Download the appropriate layout (probably the "stabilized" version, unless you're on a very early prototype that lacks keyboard stabilizers).
 
@@ -55,7 +55,7 @@ sudo raspi-config # opens Raspberry Pi configuration utility; see excursus below
 
 Reboot later. Return to the command line.
 
-The following series of commands will allow you to clone the [Manuscripts Github Repository](https://github.com/charleskcisco/manuscripts), which contains two scripts you'll need to run: one sets up your .bashrc and boot scripts, and one updates your system, installs dependencies, sets up the Python virtual environment, and reboots into the Manuscripts text editor. The full explanation of what the scripts does is in the appendix if you want to see it all in one place.
+The following series of commands will allow you to clone the [Manuscripts Github repository](https://github.com/charleskcisco/manuscripts), which contains two scripts you'll need to run: one sets up your .bashrc and boot scripts, and one updates your system, installs dependencies, sets up the Python virtual environment, and reboots into the Manuscripts text editor. The full explanation of what the scripts does is in the appendix if you want to see it all in one place.
 
 ```bash
 sudo apt install git # allows the cloning of github repositories onto your device
