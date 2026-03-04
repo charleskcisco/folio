@@ -22,7 +22,7 @@ On your computer, download the Raspberry Pi OS Imager, open it with your SD card
 8. At this point there's no reason to enable SSH by default. We might talk about how to do this at a later time if needed.
 9. We also don't need Raspberry Pi Connect.
 10. You're now at the point in the imager where you want to confirm that you've customized hostname, localization, user account, and Wi-Fi. Assuming that you have done so, you can click the big red button that says "Write."
-11. Insert your SD card into its slot on the Raspberry Pi and connect your battery.
+11. Insert your SD card into its slot on the Raspberry Pi and connect your battery to test before assembly.
 
 ## Step 2: Assemble Folio
 You'll need the following parts to assemble:
