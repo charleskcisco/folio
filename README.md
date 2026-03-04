@@ -39,14 +39,7 @@ You'll need the following parts to assemble:
 Run the following commands in the following order:
 
 ```bash
-sudo raspi-config # opens Raspberry Pi configuration utility; see below
-sudo apt update # checks for system updates
-sudo apt upgrade # applies the same
-sudo apt install git # allows the cloning of github repositories onto your device
-git clone https://github.com/charleskcisco/manuscripts.git
-cd manuscripts # moves into Manuscripts directory
-./device-setup.sh # moves foot.ini into place, sets up .bashrc and boot script
-./app-setup.sh # installs dependencies, sets up venv, reboots (so make sure to do this one last)
+sudo raspi-config # opens Raspberry Pi configuration utility; see excursus below for instructions
 ```
 
 ### Excursus: In Raspi-Config
@@ -61,6 +54,16 @@ cd manuscripts # moves into Manuscripts directory
 - A1 Expand Filesystem
 
 Reboot later.
+
+```bash
+sudo apt update # checks for system updates
+sudo apt upgrade # applies the same
+sudo apt install git # allows the cloning of github repositories onto your device
+git clone https://github.com/charleskcisco/manuscripts.git
+cd manuscripts # moves into Manuscripts directory
+./device-setup.sh # moves foot.ini into place, sets up .bashrc and boot script
+./app-setup.sh # installs dependencies, sets up venv, reboots (so make sure to do this one last)
+```
 
 ## Step 4: Write
 Assuming you have correctly done the above, when your writerdeck reboots, it should boot into Manuscripts and you're ready to start composing.
