@@ -30,8 +30,8 @@ You'll need the following parts to assemble:
 - [ ] Folio shell
 - [ ] Raspberry Pi Zero 2w (with prepped SD card)
 - [ ] HMTECH 7 display
-- [ ] Skelett 40 keyboard
-- [ ] HDMI-to-MiniHDMI
+- [ ] Skelett 40 keyboard (assembled with switches and keycaps)
+- [ ] Display cable (male HDMI to male mini-HDMI)
 - [ ] Power cable (female USB-C to 2x male micro-USB)
 - [ ] Keyboard cable (male micro-USB to male USB-C)
 
