@@ -1,7 +1,7 @@
 # Setup instructions
 
 ## Step 0: Ensure that your keyboard has the proper layout before enclosing it in your shell
-Keyboard layout .json files may be found on [ the FolioGithub](https://github.com/charleskcisco/folio).
+Keyboard layout .json files may be found on [the Folio Github](https://github.com/charleskcisco/folio).
 
 Download the appropriate layout (probably the "stabilized" version, unless you're on a very early prototype).
 
