@@ -1,9 +1,3 @@
----
-tags:
-  - makerlab
-  - veritas
-  - folio
----
 # Setup instructions
 
 ## Step 0: Ensure that your keyboard has the proper layout before enclosing it in your shell
