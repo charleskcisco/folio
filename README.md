@@ -53,7 +53,7 @@ sudo raspi-config # opens Raspberry Pi configuration utility; see excursus below
 - 6 Advanced Options
 - A1 Expand Filesystem
 
-Reboot later.
+Reboot later. Return to the command line.
 
 ```bash
 sudo apt update # checks for system updates
