@@ -19,7 +19,7 @@ On your computer, download the Raspberry Pi OS Imager, open it with your SD card
 5. For localization settings, select Capital city: Washington DC, Time zone: America/New York, and Keyboard layout: U.S.
 6. For Linux-based systems, I find that the best username is your first name. Select a password that you'll remember.
 7. You'll have to enter a Wi-Fi SSID and password. We'll provide those for you in class.
-8. At this point there's no reason to enable SSH by default. We might talk about how to do this at a later time if needed.
+8. Enable SSH by default. This helps your teachers to troubleshoot if needed.
 9. We also don't need Raspberry Pi Connect.
 10. You're now at the point in the imager where you want to confirm that you've customized hostname, localization, user account, and Wi-Fi. Assuming that you have done so, you can click the big red button that says "Write."
 11. Insert your SD card into its slot on the Raspberry Pi and connect your battery to test before assembly.
