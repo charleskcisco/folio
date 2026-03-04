@@ -35,7 +35,7 @@ You'll need the following parts to assemble:
 - [ ] Power cable (female USB-C to 2x male micro-USB)
 - [ ] Keyboard cable (male micro-USB to male USB-C)
 
-## Step 3: Basic Raspberry Pi Setup
+## Step 3: Raspberry Pi Setup
 Run the following commands in the following order:
 
 ```bash
@@ -55,9 +55,9 @@ sudo raspi-config # opens Raspberry Pi configuration utility; see excursus below
 
 Reboot later. Return to the command line.
 
+The following series of commands will allow you to clone the [Manuscripts Github Repository](https://github.com/charleskcisco/manuscripts), which contains two scripts you'll need to run: one sets up your .bashrc and boot scripts, and one updates your system, installs dependencies, sets up the Python virtual environment, and reboots into the Manuscripts text editor. The full explanation of what the scripts does is in the appendix if you want to see it all in one place.
+
 ```bash
-sudo apt update # checks for system updates
-sudo apt upgrade # applies the same
 sudo apt install git # allows the cloning of github repositories onto your device
 git clone https://github.com/charleskcisco/manuscripts.git
 cd manuscripts # moves into Manuscripts directory
@@ -71,7 +71,7 @@ Assuming you have correctly done the above, when your writerdeck reboots, it sho
 ## Appendix: Shell Script Explanations
 
 ### device-setup.sh
-`device-setup.sh` configures the device to auto-launch Manuscripts at boot. It does three things:
+`device-setup.sh` configures the device to auto-launch Manuscripts **at boot**. This is specifically designed for our hardware and our students, who we want running this software on their devices almost exclusively. It does three things:
 
 1. **Appends an auto-launch block to `~/.bashrc`.** The block checks whether the current shell is on TTY1 (the physical console) with no graphical session running (`$DISPLAY` and `$WAYLAND_DISPLAY` both unset). If so, it executes `~/start-deck.sh`. A marker comment makes the append idempotent — if it's already present, the script skips it.
 2. **Installs `~/start-deck.sh`** by copying a template from `support/start-deck.sh` and substituting the placeholder path with the actual repo directory via `sed`. This script sets `XKB_DEFAULT_OPTIONS` for compose-key support, then launches Cage (a single-window Wayland compositor) running Foot (a Wayland terminal emulator), which in turn `cd`s into the repo and runs Manuscripts.
